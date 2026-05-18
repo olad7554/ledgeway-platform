@@ -1,0 +1,22 @@
+{
+  "name": "ledgeway-audit-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Operations service for audit events and integrity checks",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "pg": "^8.13.1",
+    "pino-pretty": "^11.2.2",
+    "zod": "^3.24.1"
+  }
+}
